@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>login</title>
+
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+        integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/fb1e1c83c5.js" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="./assets/css/login.css">
+</head>
+
+
+
+
+
+
+
+<body>
+
+    <main>
+
+        <div class="container">
+            <!-- Aqui inicia el formulario -->
+            <form id="formLogin" onsubmit="ValidadLogin(event)">
+                <div class="general2 d-flex flex-column">
+
+                    <div class="contenedor d-flex flex-column row col-md-8 col-lg-6">
+                        <h3>Iniciar sesión</h3>
+
+                        <div class="row col-sm-8 espacio input-group mb-3">
+                            <div class="input-group-prepend  campos">
+                                <span class="input-group-text"><i class="fas fa-user-circle"></i></span>
+                            </div>
+                            <input type="text" class="form-control campos-texto" id="nomusuario"
+                                title="Escriba su usuario" placeholder="Usuario" minlength="5" maxlength="30"
+                                pattern="[A-Za-z]{1-15}" required>
+                        </div>
+
+                        <div class="row col-sm-8 espacio input-group mb-3">
+                            <div class="input-group-prepend  campos">
+                                <span class="input-group-text"><i class="fas fa-lock"></i></span>
+                            </div>
+                            <input type="password" class="form-control campos-texto" id="password"
+                                title="Escriba su contraseña con un minino de 5 y maximo de 10 caracteres"
+                                placeholder="Contraseña" minlength="5" maxlength="10" pattern="[A-Za-z0-9!?-]{1-15}"
+                                required>
+                        </div>
+
+                        <div class="boton2 col-sm-8">
+
+                            <!--<button class="bton2" type="button">Ingresar</button>-->
+
+                            <input type="submit" class="bton2" value="Enviar">
+
+
+                            <button class="bton2" onclick="window.location.href='form-registro.html'"
+                                type="button">Registrarte</button>
+
+
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </main>
+
+
+
+
+
+    <script src="./assets/js/login.js"></script>
+
+</body>
+
+</html>

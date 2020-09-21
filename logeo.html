@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="vierport" content="width=device-width, initial-scale=1.0">
+    <title>perfil</title>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+        integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="./assets/css/styles.css">
+</head>
+
+<body>
+
+    <main>
+
+        <div class=" row">
+            <div class="col-4 izquierdad"><img class="foto" src="./assets/img/10.jpg">
+                <h3>Bienvenido</h3>
+                <span id="nombreusurio"></span>
+
+
+
+                <input type="text" id="lista">
+                <button id="agregarlista" type="submit" onclick="agregarlista(event)">Añadir nueva lista</button>
+
+                <div class="tabla">
+                    <div class="row">
+                        <div class="col">
+                            <table class="table table-striped table-dark">
+                                <thead>
+                                    <tr>
+                                        <th scope="col">#</th>
+                                        <th scope="col">lista</th>
+                                    </tr>
+                                </thead>
+                                <tbody id="tablaLista">
+
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                    <button class="btn btn-danger" id="limpiar">Limpiar</button>
+                </div>
+
+
+
+
+                <br>
+                <br>
+                <a href="login.html">Regresar</a>
+
+
+
+
+            </div>
+            <!--esta la otra parte                    -->
+
+            <div class="col-8 principal">
+                <h1>Lista de Tareas del Bootcamp</h1>
+                <p id="mensaje"></p>
+
+
+                <!--<span id="mensaje"></span>-->
+                <!--<input type="text" id="mensaje">-->
+
+                <div class="teclado-digital">
+
+                    <div class="palabras">
+                        <button class="letra">Q</button>
+                        <button class="letra">W</button>
+                        <button class="letra">E</button>
+                        <button class="letra">R</button>
+                        <button class="letra">T</button>
+                        <button class="letra">Y</button>
+                        <button class="letra">U</button>
+                        <button class="letra">I</button>
+                        <button class="letra">O</button>
+                        <button class="letra">P</button>
+                        <br>
+                        <button class="letra">A</button>
+                        <button class="letra">S</button>
+                        <button class="letra">D</button>
+                        <button class="letra">F</button>
+                        <button class="letra">G</button>
+                        <button class="letra">H</button>
+                        <button class="letra">J</button>
+                        <button class="letra">K</button>
+                        <button class="letra">L</button>
+                        <button class="letra">Ñ</button>
+                        <br>
+                        <button class="letra">Z</button>
+                        <button class="letra">X</button>
+                        <button class="letra">C</button>
+                        <button class="letra">V</button>
+                        <button class="letra">B</button>
+                        <button class="letra">N</button>
+                        <button class="letra">M</button>
+
+                        <button class="letra">.</button>
+
+
+                        <button class="letra">space</button>
+                        <button class="letra">borrar</button>
+                    </div>
+                </div>
+                <!--div class="adicional">
+                <button id="agregarTarea" type="submit" onsubmit="agregarTarea(event)">Añadir
+                    Tarea</button>-->
+
+
+                <button id="agregarTareas" type="submit" onclick="agregarTarea(event)">Añadir
+                    Tarea</button>
+
+                <h2>Mis Tareas Pendientes</h2>
+
+
+                <div class="tabla">
+                    <div class="row">
+                        <div class="col">
+                            <table class="table">
+                                <thead>
+                                    <tr>
+                                        <th scope="col">#</th>
+                                        <th scope="col">Tareas</th>
+                                    </tr>
+                                </thead>
+                                <tbody id="tablaTarea">
+
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                    <button class="btn btn-danger" id="limpiar">Limpiar</button>
+                </div>
+
+
+
+
+
+
+
+
+
+
+                <!-- </div>-->
+            </div>
+        </div>
+
+    </main>
+
+
+    <script src="./assets/js/script.js"></script>
+
+</body>
+
+</html>
